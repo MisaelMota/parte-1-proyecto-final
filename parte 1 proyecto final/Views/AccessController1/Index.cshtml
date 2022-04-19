@@ -1,0 +1,51 @@
+﻿@model UserModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>login</title>
+
+</head>
+<body>
+
+    <div class="row mt-5">
+        <div class="col-sm-4 offset-sm-4">
+            <h3>Login</h3>
+            <form asp-controller="AccessController1" asp-action="Index" method="post">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="Enter email" asp-for="Email">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" placeholder="Password"asp-for="Passw">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+        </div>
+
+
+
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
